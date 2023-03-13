@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tic-tac-toe</title>
+</head>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #3b0b0b;
+		color: #ecc30b;
+		padding-top: 100px;
+		font-weight: bold;
+		font-size: larger;
+	}
+
+	h1,h3 {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		font-size: larger;
+		font-weight: bold;
+	}
+
+	.button {
+		background-color: #d4e72a;
+		color: rgb(29, 4, 4);
+		padding: 50px 100px;
+		border: none;
+		border-radius: 5px;
+		font-size: 50px;
+		margin-right: 20px;
+		cursor: pointer;
+		box-shadow: 0px 5px 0px #3e8e41;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.button:hover {
+		box-shadow: 8px 8px 8px #e7e7c7;
+	}
+
+	.button:active {
+		background-color: #8ccf8e;
+		box-shadow: none;
+		transform: translateY(5px);
+		transition: none;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+	}
+</style>
+<script>
+	function redirectTohuman() {
+		window.location.href = "TicTacToe.html";
+	}
+	function redirectTocomputer() {
+		window.location.href = "VsComputer.html";
+	}
+</script>
+
+<body>
+	<h1><i>tic tac toe</i></h1>
+
+
+	<img src="tic.png" alt="Tic-tac-toe">
+	
+
+
+		<div class="button-container">
+			<button class="button" id="path1" onclick="redirectTocomputer()">SINGLE PLAYER</button>
+			<button class="button" id="path2" onclick="redirectTohuman()">MULTIPLAYER</button>
+		</div>
+</body>
+
+</html>
